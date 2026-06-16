@@ -1,11 +1,10 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class coffeeCounter {
+public class CoffeeCounter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            System.out.print("Enter coffee type (espresso/latte/cappuccino) or exit: ");
             String coffee = sc.nextLine();
 
             if (coffee.equalsIgnoreCase("exit")) {
@@ -40,10 +39,6 @@ public class coffeeCounter {
             System.out.println("Total Bill = " + total);
             System.out.println("GST = " + gst);
             System.out.println("Final Bill = " + finalBill);
-            System.out.println();
         }
-
-        System.out.println("Cafe Closed!");
-        sc.close();
     }
 }
